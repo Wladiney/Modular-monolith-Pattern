@@ -38,10 +38,10 @@ namespace Monolith.Host
             services.AddTransient<IPostConfigureOptions<MvcOptions>, ModuleRoutingMvcOptionsPostConfigure>();
 
             // Adds module1 with the route prefix module-1
-            services.AddModule<Module1.Startup>("module1");
+            services.AddModule<ModuleA.Startup>("moduleA");
 
             // Adds module2 with the route prefix module-2
-            services.AddModule<Module2.Startup>("module2");
+            services.AddModule<ModuleB.Startup>("moduleB");
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

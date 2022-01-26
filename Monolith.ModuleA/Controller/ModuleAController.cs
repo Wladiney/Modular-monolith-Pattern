@@ -1,19 +1,19 @@
 using Microsoft.AspNetCore.Mvc;
 using Monolith.Module1.Shared;
 
-namespace Monolith.Module1
+namespace Monolith.ModuleA
 {
-    [Route("[module]/[controller]")]
-    internal class TestController : Controller
+    [Route("[controller]")]
+    internal class ModuleAController : Controller
     {
         private readonly ITestService _testService;
 
-        public TestController(ITestService testService)
+        public ModuleAController(ITestService testService)
         {
             _testService = testService;
         }
 
-        [HttpGet]
+        [HttpGet("SimpleGET")]
         public ActionResult<string> Index()
         {
             return $"{_testService.SayHello()} in TestController in Module 1";

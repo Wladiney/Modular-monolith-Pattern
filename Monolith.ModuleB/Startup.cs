@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using IStartup = Monolith.Shared.IStartup;
 
-namespace Monolith.Module2
+namespace Monolith.ModuleB
 {
     public class Startup : IStartup
     {

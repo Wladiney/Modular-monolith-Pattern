@@ -5,7 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Monolith.Module1.Shared;
 using IStartup = Monolith.Shared.IStartup;
 
-namespace Monolith.Module1
+namespace Monolith.ModuleA
 {
     public class Startup : IStartup
     {
